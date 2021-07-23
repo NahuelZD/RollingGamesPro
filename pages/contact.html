@@ -32,7 +32,7 @@
         <h4 class="mb-3 mt-3 p-5 text-light">Navega por nuestras oficinas</h4>
         <div class="row">
             <div class="col-sm-4">
-                <select class="form-select space" style="border: none; background-color: rgb(228, 228, 228);"
+                <select id="regiones" class="form-select space" style="border: none; background-color: rgb(228, 228, 228);"
                     aria-label="Default select example">
                     <option selected>Región</option>
                     <option value="africa">África</option>
@@ -83,7 +83,7 @@
                 <ul>
                     <li><a href="/pages/contact.html">Nuestra gente</a></li>
                     <li><a href="#">Tus inquietudes</a></li>
-                </ul>    
+                </ul>
             </div>
             <div class="col-12 col-md-4">
                 <h3 class="text-center text-white pb-2">Stuff</h3>
@@ -94,12 +94,58 @@
                     <li><a href="#">Políticas de privacidad</a></li>
                 </ul>
             </div>
-          </div>
+        </div>
     </footer>
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script>
+    /*     var auto = {
+        color: "rojo",
+        marca: "fiat",
+        modelo: "bravo",
+        año: 2008
+        }; */
+
+    function Auto(color, marca, modelo, anio) {
+        this.color = color;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    };
+
+    var auto = new Auto("Amarillo", "Ford", "Focus", 2015);
+    console.log(auto);
+
+    function continente(id, nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    };
+
+    function pais(id, nombre, continenteId) {
+        this.id = id;
+        this.nombre = nombre;
+        this.continenteId = continenteId;
+    };
+
+    function agencia(id, nombre, direccion, telefono, paisId) {
+        this.id = id;
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.paisId = paisId;
+    };
+
+    var listaRegion = [new continente(1, 'Africa'), new continente(2, 'America Latina')];
+    var listaPais = [new pais(1, 'Nigeria', 1), new pais(2, 'Argentina', 2)];
+    var listaAgencia = [new agencia(1, 'La Banda soft', 'Lavalle 251', '+543814260378', 2)];
+
+    function llenarListaRegion() {
+        $("#regiones")
+    }
+</script>
 
 </html>
