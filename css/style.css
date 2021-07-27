@@ -21,6 +21,10 @@ h1,
 h4 {
   cursor: context-menu;
 }
+h1,
+h2 {
+  color: rgb(255, 216, 157);
+}
 .from-text {
   border: none;
   background-color: rgb(228, 228, 228);
@@ -34,6 +38,9 @@ h4 {
 .imgLogo {
   width: 200px;
   transition: all 0.5s;
+}
+.about-us{
+  padding: 3em;
 }
 p,
 h3 {
@@ -56,7 +63,7 @@ a:hover {
   transition: 0.2s ease-in;
   color: violet;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   h1,
   h4 {
     font-size: 24px;
@@ -64,6 +71,9 @@ a:hover {
   }
   .space {
     margin-bottom: 6px;
+  }
+  .cards{
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 768px) {
