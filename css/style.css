@@ -1,65 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background: rgb(2,0,36);
-background: linear-gradient(149deg, rgba(2,0,36,1) 0%, rgba(82,5,123,1) 39%, rgba(166,0,255,1) 100%);
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    149deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(82, 5, 123, 1) 39%,
+    rgba(166, 0, 255, 1) 100%
+  );
 }
-footer{
-    background-image: url(/img/contact/stem-cells-transplant-footer-background.jpg);
-    background-position: center;
-    background-size: cover;
+footer {
+  background-image: url(/img/contact/stem-cells-transplant-footer-background.jpg);
+  background-position: center;
+  background-size: cover;
 }
-h1,h4{
-    cursor: context-menu;
+h1,
+h4 {
+  cursor: context-menu;
 }
-.from-text{
-    border: none;
-    background-color: rgb(228, 228, 228);
-    float: right;
-    width: 100%;
-    height: 2.5rem;
-    border-radius: 3px;
-    padding-left: 1rem;
-    position: relative;
+.from-text {
+  border: none;
+  background-color: rgb(228, 228, 228);
+  float: right;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 3px;
+  padding-left: 1rem;
+  position: relative;
 }
-.imgLogo{
-    width: 200px;
-    transition: all 0.5s;
+.imgLogo {
+  width: 200px;
+  transition: all 0.5s;
 }
-p,h3{
-    color: white;
-    border-bottom: 2px solid white;
-    transition: 0.5s ease;
+p,
+h3 {
+  color: white;
+  border-bottom: 2px solid white;
+  transition: 0.5s ease;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-.imgLogo:hover{
-    transform: rotate(360deg);
+.imgLogo:hover {
+  transform: rotate(360deg);
 }
-a:hover{
-    font-size: 120%;
-    transition: 0.2s ease-in;
-    color: violet;
+a:hover {
+  font-size: 120%;
+  transition: 0.2s ease-in;
+  color: violet;
 }
 @media only screen and (max-width: 600px) {
-    h1,h4 {
-      font-size: 24px;
-      text-align: center;
-    }
-    .space{
-        margin-bottom: 6px;
-    }
+  h1,
+  h4 {
+    font-size: 24px;
+    text-align: center;
   }
-  @media only screen and (max-width: 768px) {
-      .imgLogo{
-          width: 50%;
-      }
+  .space {
+    margin-bottom: 6px;
   }
+}
+@media only screen and (max-width: 768px) {
+  .imgLogo {
+    width: 50%;
+  }
+}
