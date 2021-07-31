@@ -71,6 +71,16 @@ var sucursales = [
   {nombre:'Citynizer Plaza', direccion: 'Calle de Juanelo, 17, 28012 Madrid, España', numero: '+34915395630', ubicacion: 'España'},
   {nombre:'TASCHEN', direccion: 'Calle del Barquillo, 30, 28004 Madrid, España', numero: '+34916033042', ubicacion: 'España'},
   {nombre:'Veinti7 E-Commerce', direccion: 'Calle de San Mateo, 26, 28004 Madrid, España', numero: '+34692348284', ubicacion: 'España'},
+
+  {nombre:'FREE-P-STAR', direccion: '61 Rue de la Verrerie, 75004 Paris, Francia', numero: '+33142780076', ubicacion: 'Francia'},
+  {nombre:'Tabac de Rivoli', direccion: '44 Rue de Rivoli, 75004 Paris, Francia', numero: '+33972226596', ubicacion: 'Francia'},
+  {nombre:'Odeón', direccion: '104 Bd Saint-Germain, 75006 Paris, Francia', numero: '+33187760330', ubicacion: 'Francia'},
+  {nombre:'Zadkine Pitch', direccion: '100bis Rue d-Assas, 75006 Paris, Francia', numero: '+33155427720', ubicacion: 'Francia'},
+
+  {nombre:'TheCourt', direccion: 'Via Labicana, 125, 00184 Roma RM, Italia', numero: '+390669354581', ubicacion: 'Italia'},
+  {nombre:'AMA Data', direccion: 'Via Marco Aurelio, 40, 00184 Roma RM, Italia', numero: '+390670450630', ubicacion: 'Italia'},
+  {nombre:'Arco di Dolabella', direccion: 'Via di S. Paolo della Croce, 00184 Roma RM, Italia', numero: '+39060608', ubicacion: 'Italia'},
+  {nombre:'Grandi Scuole RG', direccion: 'Via della Ferratella in Laterano, 25, 00184 Roma RM, Italia', numero: '+390670495114', ubicacion: 'Italia'},
 ]
 
 let region = ["África", "América", "Asia", "Europa"];
