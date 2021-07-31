@@ -42,11 +42,6 @@ var sucursales = [
   {nombre:'Third Office RG', direccion: '154 3rd Avenue', numero: '7002154145', ubicacion: 'Nigeria'},
   {nombre:'Royal Devices', direccion: '1214 Sani Abacha Way', numero: '0114325698', ubicacion: 'Nigeria'},
 
-  {nombre:'First Office RG', direccion: 'Avenida Corrientes 2645', numero: '0114215789', ubicacion: 'Argentina'},
-  {nombre:'RG Boxes', direccion: 'Juan José Passo 225', numero: '0114285319', ubicacion: 'Argentina'},
-  {nombre:'RollingGames Pitch', direccion: 'San Martín 3361', numero: '0114625149', ubicacion: 'Argentina'},
-  {nombre:'RollingGames Pitch Plus', direccion: 'Avenida 9 de Julio 155', numero: '0114325698', ubicacion: 'Argentina'},
-
   {nombre:'Programming Collage', direccion: '17 Milner Rd', numero: '216899533', ubicacion: 'Sudáfrica'},
   {nombre:'Huis Boxes', direccion: '42 Alma Rd', numero: '216893612', ubicacion: 'Sudáfrica'},
   {nombre:'Play Pitch', direccion: '3 Lancaster Rd', numero: '21621445', ubicacion: 'Sudáfrica'},
@@ -81,7 +76,35 @@ var sucursales = [
   {nombre:'AMA Data', direccion: 'Via Marco Aurelio, 40, 00184 Roma RM, Italia', numero: '+390670450630', ubicacion: 'Italia'},
   {nombre:'Arco di Dolabella', direccion: 'Via di S. Paolo della Croce, 00184 Roma RM, Italia', numero: '+39060608', ubicacion: 'Italia'},
   {nombre:'Grandi Scuole RG', direccion: 'Via della Ferratella in Laterano, 25, 00184 Roma RM, Italia', numero: '+390670495114', ubicacion: 'Italia'},
+  
+  {nombre:'First Office RG', direccion: 'Avenida Corrientes 2645', numero: '0114215789', ubicacion: 'Portugal'},
+  {nombre:'RG Boxes', direccion: 'Juan José Passo 225', numero: '0114285319', ubicacion: 'Portugal'},
+  {nombre:'RollingGames Pitch', direccion: 'San Martín 3361', numero: '0114625149', ubicacion: 'Portugal'},
+  {nombre:'RollingGames Pitch Plus', direccion: 'Avenida 9 de Julio 155', numero: '0114325698', ubicacion: 'Portugal'},
 ]
+
+console.log(sucursales[0].nombre);
+
+let sucuArgen = sucursales.filter(sucursales => sucursales.ubicacion == "Argentina");
+let sucuBr = sucursales.filter(sucursales => sucursales.ubicacion == "Brasil");
+let sucuCh = sucursales.filter(sucursales => sucursales.ubicacion == "Chile");
+let sucuEEUU = sucursales.filter(sucursales => sucursales.ubicacion == "Estados Unidos");
+let sucuMx = sucursales.filter(sucursales => sucursales.ubicacion == "México");
+let sucuUru = sucursales.filter(sucursales => sucursales.ubicacion == "Uruguay");
+let sucuPy = sucursales.filter(sucursales => sucursales.ubicacion == "Paraguay");
+let sucuNig = sucursales.filter(sucursales => sucursales.ubicacion == "Nigeria");
+let sucuSudaf = sucursales.filter(sucursales => sucursales.ubicacion == "Sudáfrica");
+
+function agregarElementos(sucur){
+  var lista = document.getElementById('frame1');
+  console.log(lista)
+  sucur.forEach(function(data,index){
+    var linew=document.createElement('p');
+    var contenido=document.createTextNode('Sucursal: '+data.nombre+' '+'Dirección: '+data.direccion+' '+'Teléfono: '+data.numero);
+    lista.appendChild(linew);
+    linew.appendChild(contenido);
+  })
+}
 
 let region = ["África", "América", "Asia", "Europa"];
 let pais = [
@@ -133,9 +156,12 @@ cargaRegion.addEventListener("change", function () {
   console.log(valor);
   switch (valor) {
     case "África":
+      agregarElementos(sucuSudaf);
+      agregarElementos(sucuNig);
       recortar(pais, 7, 11);
       break;
     case "América":
+      agregarElementos(sucuArgen);
       recortar(pais, 0, 7);
       break;
     case "Asia":

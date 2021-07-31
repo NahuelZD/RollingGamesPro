@@ -32,7 +32,6 @@
             <h4 class="mb-3 mt-3 p-5 text-light">Navega por nuestras oficinas</h4>
             <div class="row">
                 <div class="col-sm-6">
-                    <!-- Borré el "onclick" -->
                     <select name="" class="form-select space"
                         style="border: none; background-color: rgb(228, 228, 228);" aria-label="Default select example"
                         id="region">
@@ -40,13 +39,15 @@
                     </select>
                 </div>
                 <div class="col-sm-6">
-                    <!-- Borré el "id=DDL" -->
                     <select name="" id="pais" class="form-select space"
                         style="border: none; background-color: rgb(228, 228, 228);" aria-label="Default select example">
-                        <option value="" selected disabled>---País---</option>
+                        <option value="" selected disabled onclick="agregarElementos()">---País---</option>
                     </select>
                 </div>
             </div>
+        </div>
+        <div class="container-xl mt-2" id="frame1">
+
         </div>
 
     </section>
