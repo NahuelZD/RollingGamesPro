@@ -12,6 +12,35 @@ body {
     rgba(166, 0, 255, 1) 100%
   );
 }
+/* Venatan Modal */
+.modal-window span{
+  color: #712ae2;
+  display: flex;
+}
+.mostrar-modal{
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal-container{
+  display: flex;
+  background-color: rgba(0,0,0,0.3);
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+}
+.modal-window{
+  background-color: #fff;
+  width: 600px;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(228, 252, 239, 0.938);
+}
+
 footer {
   background-image: url(/img/contact/stem-cells-transplant-footer-background.jpg);
   background-position: center;

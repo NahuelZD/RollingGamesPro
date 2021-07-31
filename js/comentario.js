@@ -1,4 +1,4 @@
-function commentBox(){
+/* function commentBox(){
 	var name=document.getElementById('name').value;
 	var comment=document.getElementById('comment').value;
  
@@ -24,4 +24,16 @@ function commentBox(){
 		document.getElementById('comment').value="";
 	}
  
-}
+} */
+
+const open = document.getElementById('open');
+const modalContainer = document.getElementById('modal-container');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+	modalContainer.classList.add('mostrar-modal');
+});
+
+close.addEventListener('click', () =>{
+	modalContainer.classList.remove('mostrar-modal');
+});
