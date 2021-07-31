@@ -18,8 +18,8 @@ body {
   display: flex;
 }
 .mostrar-modal{
-  pointer-events: auto;
-  opacity: 1;
+  opacity: 1 !important;
+  z-index: 1;
 }
 .modal-container{
   display: flex;
