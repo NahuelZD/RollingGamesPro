@@ -97,6 +97,16 @@ let sucuSudaf = sucursales.filter(sucursales => sucursales.ubicacion == "Sudáfr
 let sucuArgel = sucursales.filter(sucursales => sucursales.ubicacion == "Argelia");
 let sucuEgi = sucursales.filter(sucursales => sucursales.ubicacion == "Egipto");
 
+let sucuAus = sucursales.filter(sucursales => sucursales.ubicacion == "Austria");
+let sucuEsp = sucursales.filter(sucursales => sucursales.ubicacion == "España");
+let sucuFr = sucursales.filter(sucursales => sucursales.ubicacion == "Francia");
+let sucuIt = sucursales.filter(sucursales => sucursales.ubicacion == "Italia");
+let sucuPort = sucursales.filter(sucursales => sucursales.ubicacion == "Portugal");
+let sucuChina = sucursales.filter(sucursales => sucursales.ubicacion == "China");
+let sucuJapon = sucursales.filter(sucursales => sucursales.ubicacion == "Japón");
+let sucuIndia = sucursales.filter(sucursales => sucursales.ubicacion == "India");
+let sucuTai = sucursales.filter(sucursales => sucursales.ubicacion == "Tailandia");
+
 function agregarElementos(sucur){
   var lista = document.getElementById('frame1');
   console.log(lista)
@@ -136,7 +146,7 @@ function mostrarLugares(arreglo, lugar) {
   let elementos = "<option selected value='0'>--Seleccione--</option>";
   for (let i = 0; i < arreglo.length; i++) {
     elementos +=
-      '<option id="' + arreglo[i] + '">' + arreglo[i] + "</option>";
+      '<option value="' + arreglo[i] + '">' + arreglo[i] + "</option>";
   }
 
   lugar.innerHTML = elementos;
@@ -163,7 +173,6 @@ cargaRegion.addEventListener("change", function () {
       agregarElementos(sucuArgel);
       agregarElementos(sucuEgi);
       recortar(pais, 7, 11);
-      console.log(valor);
       break;
     case "América":
       agregarElementos(sucuArgen);
@@ -177,6 +186,11 @@ cargaRegion.addEventListener("change", function () {
       recortar(pais, 16);
       break;
     case "Europa":
+      agregarElementos(sucuAus);
+      agregarElementos(sucuEsp);
+      agregarElementos(sucuFr);
+      agregarElementos(sucuIt);
+      agregarElementos(sucuPort);
       recortar(pais, 11, 16);
       break;
     case "0":
@@ -184,3 +198,10 @@ cargaRegion.addEventListener("change", function () {
       break;
   }
 });
+
+var paisSelect = document.querySelector('.pais');
+
+paisSelect.addEventListener('change',()=>{
+  const resultado = document.getElementById('frame1');
+  resultado.textContent = `El pais elegido es ${paisSelect.value}`
+})

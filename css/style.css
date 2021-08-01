@@ -29,8 +29,9 @@ body {
   pointer-events: none;
   top: 0;
   left: 0;
+  right: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   opacity: 0;
   position: fixed;
 }
