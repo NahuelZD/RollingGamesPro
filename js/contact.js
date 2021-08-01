@@ -1,6 +1,30 @@
 let cargaRegion = document.getElementById("region");
 let cargaPais = document.getElementById("pais");
 
+let region = ["África", "América", "Asia", "Europa"];
+let pais = [
+  { nombre: "Argentina", region: "América" },
+  { nombre: "Brasil", region: "América" },
+  { nombre: "Chile", region: "América" },
+  { nombre: "Estados Unidos", region: "América" },
+  { nombre: "México", region: "América" },
+  { nombre: "Uruguay", region: "América" },
+  { nombre: "Paraguay", region: "América" },
+  { nombre: "Nigeria", region: "África" },
+  { nombre: "Sudáfrica", region: "África" },
+  { nombre: "Argelia", region: "África" },
+  { nombre: "Egipto", region: "África" },
+  { nombre: "Austria", region: "Europa" },
+  { nombre: "España", region: "Europa" },
+  { nombre: "Francia", region: "Europa" },
+  { nombre: "Italia", region: "Europa" },
+  { nombre: "Portugal", region: "Europa" },
+  { nombre: "China", region: "Asia" },
+  { nombre: "Japón", region: "Asia" },
+  { nombre: "India", region: "Asia" },
+  { nombre: "Tailandia", region: "Asia" },
+];
+
 var sucursales = [
   {
     nombre: "First Office RG",
@@ -176,7 +200,6 @@ var sucursales = [
     numero: "217290300",
     ubicacion: "Paraguay",
   },
-
   {
     nombre: "Taj Limited",
     direccion: "72 Ahmudu Bello Way",
@@ -276,7 +299,6 @@ var sucursales = [
     numero: "1010005100",
     ubicacion: "Egipto",
   },
-
   {
     nombre: "Scotch Club",
     direccion: "Parkriing 10",
@@ -301,7 +323,6 @@ var sucursales = [
     numero: "+431533041629",
     ubicacion: "Austria",
   },
-
   {
     nombre: "Paredes REC",
     direccion: "C. de Atocha, 30, 28012 Madrid, España",
@@ -326,7 +347,6 @@ var sucursales = [
     numero: "+34692348284",
     ubicacion: "España",
   },
-
   {
     nombre: "FREE-P-STAR",
     direccion: "61 Rue de la Verrerie, 75004 Paris, Francia",
@@ -351,7 +371,6 @@ var sucursales = [
     numero: "+33155427720",
     ubicacion: "Francia",
   },
-
   {
     nombre: "TheCourt",
     direccion: "Via Labicana, 125, 00184 Roma RM, Italia",
@@ -376,7 +395,6 @@ var sucursales = [
     numero: "+390670495114",
     ubicacion: "Italia",
   },
-
   {
     nombre: "First Office RG",
     direccion: "Avenida Corrientes 2645",
@@ -401,7 +419,6 @@ var sucursales = [
     numero: "0114325698",
     ubicacion: "Portugal",
   },
-
   {
     nombre: "Ping An Financer",
     direccion: "Futian CBD, Futian, Shenzhen, China",
@@ -433,66 +450,6 @@ var sucursales = [
 
 console.log(sucursales[0].nombre);
 
-let sucuArgen = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Argentina"
-);
-let sucuBr = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Brasil"
-);
-let sucuCh = sucursales.filter((sucursales) => sucursales.ubicacion == "Chile");
-let sucuEEUU = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Estados Unidos"
-);
-let sucuMx = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "México"
-);
-let sucuUru = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Uruguay"
-);
-let sucuPy = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Paraguay"
-);
-let sucuNig = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Nigeria"
-);
-let sucuSudaf = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Sudáfrica"
-);
-let sucuArgel = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Argelia"
-);
-let sucuEgi = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Egipto"
-);
-
-let sucuAus = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Austria"
-);
-let sucuEsp = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "España"
-);
-let sucuFr = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Francia"
-);
-let sucuIt = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Italia"
-);
-let sucuPort = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Portugal"
-);
-let sucuChina = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "China"
-);
-let sucuJapon = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Japón"
-);
-let sucuIndia = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "India"
-);
-let sucuTai = sucursales.filter(
-  (sucursales) => sucursales.ubicacion == "Tailandia"
-);
-
 function agregarElementos(sucur) {
   var lista = document.getElementById("frame1");
   console.log(lista);
@@ -512,31 +469,6 @@ function agregarElementos(sucur) {
     linew.appendChild(contenido);
   });
 }
-
-let region = ["África", "América", "Asia", "Europa"];
-let pais = [
-  { nombre: "Argentina", region: "América" },
-  { nombre: "Brasil", region: "América" },
-  { nombre: "Chile", region: "América" },
-  { nombre: "Estados Unidos", region: "América" },
-  { nombre: "México", region: "América" },
-  { nombre: "Uruguay", region: "América" },
-  { nombre: "Paraguay", region: "América" },
-  { nombre: "Nigeria", region: "África" },
-  { nombre: "Sudáfrica", region: "África" },
-  { nombre: "Argelia", region: "África" },
-  { nombre: "Egipto", region: "África" },
-  { nombre: "Austria", region: "Europa" },
-  { nombre: "España", region: "Europa" },
-  { nombre: "Francia", region: "Europa" },
-  { nombre: "Italia", region: "Europa" },
-  { nombre: "Portugal", region: "Europa" },
-  { nombre: "China", region: "Asia" },
-  { nombre: "Japón", region: "Asia" },
-  { nombre: "India", region: "Asia" },
-  { nombre: "Tailandia", region: "Asia" },
-];
-
 cargarRegion();
 
 cargaRegion.addEventListener("change", function () {
