@@ -94,6 +94,8 @@ let sucuUru = sucursales.filter(sucursales => sucursales.ubicacion == "Uruguay")
 let sucuPy = sucursales.filter(sucursales => sucursales.ubicacion == "Paraguay");
 let sucuNig = sucursales.filter(sucursales => sucursales.ubicacion == "Nigeria");
 let sucuSudaf = sucursales.filter(sucursales => sucursales.ubicacion == "Sudáfrica");
+let sucuArgel = sucursales.filter(sucursales => sucursales.ubicacion == "Argelia");
+let sucuEgi = sucursales.filter(sucursales => sucursales.ubicacion == "Egipto");
 
 function agregarElementos(sucur){
   var lista = document.getElementById('frame1');
@@ -134,7 +136,7 @@ function mostrarLugares(arreglo, lugar) {
   let elementos = "<option selected value='0'>--Seleccione--</option>";
   for (let i = 0; i < arreglo.length; i++) {
     elementos +=
-      '<option value="' + arreglo[i] + '">' + arreglo[i] + "</option>";
+      '<option id="' + arreglo[i] + '">' + arreglo[i] + "</option>";
   }
 
   lugar.innerHTML = elementos;
@@ -158,10 +160,17 @@ cargaRegion.addEventListener("change", function () {
     case "África":
       agregarElementos(sucuSudaf);
       agregarElementos(sucuNig);
+      agregarElementos(sucuArgel);
+      agregarElementos(sucuEgi);
       recortar(pais, 7, 11);
+      console.log(valor);
       break;
     case "América":
       agregarElementos(sucuArgen);
+      agregarElementos(sucuBr);
+      agregarElementos(sucuCh);
+      agregarElementos(sucuPy);
+      agregarElementos(sucuUru);
       recortar(pais, 0, 7);
       break;
     case "Asia":
