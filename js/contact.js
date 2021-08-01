@@ -1,5 +1,6 @@
 let cargaRegion = document.getElementById("region");
 let cargaPais = document.getElementById("pais");
+let stringSearch = document.getElementById("field-search");
 
 let region = ["África", "América", "Asia", "Europa"];
 let pais = [
@@ -192,7 +193,7 @@ var sucursales = [
     nombre: "Topacio Pitch Py",
     direccion: "Vice Presidente Sanchez 1102",
     numero: "214141991",
-    ubicacion: "Paraguaya",
+    ubicacion: "Paraguay",
   },
   {
     nombre: "E-Biggie",
@@ -450,8 +451,13 @@ var sucursales = [
 
 console.log(sucursales[0].nombre);
 
-function agregarElementos(sucur) {
+cargaPais.addEventListener("change", function () {
+  let valorSucur = cargaPais.value;
+  console.log(valorSucur);
+  let sucur = filtrarSucursalPorPais(valorSucur);
+  console.log(sucur);
   var lista = document.getElementById("frame1");
+  lista.innerHTML = "";
   console.log(lista);
   sucur.forEach(function (data, index) {
     var linew = document.createElement("p");
@@ -468,8 +474,32 @@ function agregarElementos(sucur) {
     lista.appendChild(linew);
     linew.appendChild(contenido);
   });
-}
+});
+
 cargarRegion();
+
+stringSearch.addEventListener("change", function () {
+  let sucur = filtrarPorTexto(stringSearch.value);
+  console.log(sucur);
+  var lista = document.getElementById("frame1");
+  lista.innerHTML = "";
+  console.log(lista);
+  sucur.forEach(function (data, index) {
+    var linew = document.createElement("p");
+    var contenido = document.createTextNode(
+      "Sucursal: " +
+        data.nombre +
+        " " +
+        "Dirección: " +
+        data.direccion +
+        " " +
+        "Teléfono: " +
+        data.numero
+    );
+    lista.appendChild(linew);
+    linew.appendChild(contenido);
+  });
+});
 
 cargaRegion.addEventListener("change", function () {
   let valor = cargaRegion.value;
@@ -490,6 +520,17 @@ cargaRegion.addEventListener("change", function () {
 function filtrarPaisPorRegion(nombreReg) {
   let paises = pais.filter((paises) => paises.region == nombreReg);
   return paises;
+}
+
+function filtrarSucursalPorPais(sucur) {
+  let negocios = sucursales.filter((c) => c.ubicacion == sucur);
+  return negocios;
+}
+
+function filtrarPorTexto(texto) {
+  let negocios = sucursales.filter((c) => c.nombre.includes(texto));
+  console.log(negocios);
+  return negocios;
 }
 
 function cargarRegion() {
