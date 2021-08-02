@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    149deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(82, 5, 123, 1) 39%,
-    rgba(166, 0, 255, 1) 100%
-  );
+  background: black
+}
+.bgOpt{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bgOpt.parallax1{
+  background-image: url(/img/about/doom.jpg);
+}
+.bgOpt.parallax2{
+  background-image: url(/img/about/resident.jpg);
+}
+.bgOpt.parallax3{
+  background-image: url(/img/about/mario.png);
 }
 /* Venatan Modal */
 .modal-window span{

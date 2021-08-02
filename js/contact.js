@@ -461,16 +461,22 @@ cargaPais.addEventListener("change", function () {
   console.log(lista);
   sucur.forEach(function (data, index) {
     var linew = document.createElement("p");
+    var espacio = document.createElement("br");
+    var espacio2 = document.createElement("br");
+    var textSpanSucu = document.createTextNode(
+      "Sucursal: " + data.nombre
+    )
+    var textSpanDirec = document.createTextNode(
+      "Dirección: " + data.direccion
+    )
     var contenido = document.createTextNode(
-      "Sucursal: " +
-        data.nombre +
-        " " +
-        "Dirección: " +
-        data.direccion +
-        " " +
         "Teléfono: " +
         data.numero
     );
+    linew.appendChild(textSpanSucu);
+    linew.appendChild(espacio);
+    linew.appendChild(textSpanDirec);
+    linew.appendChild(espacio2);
     lista.appendChild(linew);
     linew.appendChild(contenido);
   });
