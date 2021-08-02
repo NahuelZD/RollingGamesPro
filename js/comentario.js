@@ -24,7 +24,7 @@ const integrantes = [
     identificador: "nahuel",
   },
   {
-    nombre: "Hola Como Zelaya",
+    nombre: "Agustín Gómez Aranda",
     nacimiento: "18 de Abril de 1993",
     educacion: "Universidad Nacional de Tucumán UNT",
     descri:
@@ -33,7 +33,7 @@ const integrantes = [
     identificador: "agustin",
   },
   {
-    nombre: "Ella No Te Ama",
+    nombre: "Benjamin Morton",
     nacimiento: "18 de Abril de 1993",
     educacion: "Universidad Nacional de Tucumán UNT",
     descri:
@@ -42,7 +42,7 @@ const integrantes = [
     identificador: "bejamin",
   },
   {
-    nombre: "Ella No Te Ama",
+    nombre: "Eric Eduardo Rodriguez",
     nacimiento: "18 de Abril de 1993",
     educacion: "Universidad Nacional de Tucumán UNT",
     descri:

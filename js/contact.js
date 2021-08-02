@@ -447,6 +447,90 @@ var sucursales = [
     numero: "03546516",
     ubicacion: "China",
   },
+  {
+    nombre: "Kids Osaka",
+    direccion:
+      "2 Chome-1-7 Ogimachi, Kita Ward, Osaka, 530-0025, Japón",
+    numero: "+81663116601",
+    ubicacion: "Japón",
+  },
+  {
+    nombre: "Mirinomiya RG",
+    direccion:
+      "2 Chome-1-88 Morinomiya, Joto Ward, Osaka, 536-0025, Japón",
+    numero: "+81669690111",
+    ubicacion: "Japón",
+  },
+  {
+    nombre: "Kōkoku High",
+    direccion:
+      "1 Chome-4-26 Teradacho, Tennoji Ward, Osaka, 543-0045, Japón",
+    numero: "+81667798151",
+    ubicacion: "Japón",
+  },
+  {
+    nombre: "Osaka Shiritsu Tajima Junior",
+    direccion:
+      "5 Chome-23-7 Tajima, Ikuno Ward, Osaka, 544-0011, Japón",
+    numero: "+81667581021",
+    ubicacion: "Japón",
+  },
+  {
+    nombre: "Asia House",
+    direccion:
+      "KG Marg, 1688 Barracks, New Delhi, Delhi 110001, India",
+    numero: "+911123385466",
+    ubicacion: "India",
+  },
+  {
+    nombre: "Shangri-La",
+    direccion:
+      "19, Ashoka Rd, Janpath, Connaught Place, New Delhi, Delhi 110001, India",
+    numero: "+911141191919",
+    ubicacion: "India",
+  },
+  {
+    nombre: "Paharganj",
+    direccion:
+      "Multani Dhanda, Paharganj, New Delhi, Delhi 110055, India",
+    numero: "+914251191719",
+    ubicacion: "India",
+  },
+  {
+    nombre: "National Archives",
+    direccion:
+      "Janpath Road, Opposite Indira Gandhi National Centre for the Arts, near Shastri Bhavan, New Delhi, Delhi 110001, India",
+    numero: "+911123384797",
+    ubicacion: "India",
+  },
+  {
+    nombre: "Wat Arun",
+    direccion:
+      "158 Thanon Wang Doem, Wat Arun, Bangkok Yai, Bangkok 10600, Tailandia",
+    numero: "+6628912185",
+    ubicacion: "Tailandia",
+  },
+  {
+    nombre: "Nan Ah Pitch",
+    direccion:
+      "323 Prachathipok Road 323 Somdet Chaopraya Klongsan Bangkok 10600, Tailandia",
+    numero: "+6624395100",
+    ubicacion: "Tailandia",
+  },
+  {
+    nombre: "Tha Din Daeng",
+    direccion:
+      "163 Tha Din Daeng Rd, Khwaeng Somdet Chao Phraya, Khlong San, Bangkok 10600, Tailandia",
+    numero: "+6624383738",
+    ubicacion: "Tailandia",
+  },
+  {
+    nombre: "Pra Dipat",
+    direccion:
+      "1444 97 Thanon Nakhon Chaisi Rd, Thanon Nakhon Chai Si, Dusit District, Bangkok 10300, Tailandia",
+    numero: "+6626692291",
+    ubicacion: "Tailandia",
+  },
 ];
 
 console.log(sucursales[0].nombre);
