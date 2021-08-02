@@ -39,7 +39,16 @@ const integrantes = [
     descri:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consectetur, sequi exercitationem ut adipisci officia nesciunt harum molestiae odit ipsa ullam aut? Quam, sequi! Porro autem voluptatibus commodi ut perferendis.",
     urlImg: "/img/us/user1.jfif",
-    identificador: "ella",
+    identificador: "bejamin",
+  },
+  {
+    nombre: "Ella No Te Ama",
+    nacimiento: "18 de Abril de 1993",
+    educacion: "Universidad Nacional de Tucumán UNT",
+    descri:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consectetur, sequi exercitationem ut adipisci officia nesciunt harum molestiae odit ipsa ullam aut? Quam, sequi! Porro autem voluptatibus commodi ut perferendis.",
+    urlImg: "/img/us/user1.jfif",
+    identificador: "eric",
   },
 ];
 
